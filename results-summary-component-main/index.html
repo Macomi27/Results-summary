@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section class="content-box">
+      <div class="left-panel">
+        <p>Your Result</p>
+        <div class="score">
+          <p class="mark">76</p>
+          <p class="total">of 100</p>
+        </div>
+        <div class="remark">
+          <h3>Great</h3>
+          <p>
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </div>
+      <div class="right-panel">
+        <p>Summary</p>
+        <div class="summary">
+          <div class="result reaction">
+            <div class="summary-box reaction-box">
+              <img
+                src="./assets/images/icon-reaction.svg"
+                alt="icon-reaction"
+              />
+              <p>Reaction</p>
+            </div>
+            <p><b>80</b> / 100</p>
+          </div>
+          <div class="result memory">
+            <div class="summary-box memory-box">
+              <img src="./assets/images/icon-memory.svg" alt="icon-memory" />
+              <p>Memory</p>
+            </div>
+            <p><b>92</b> / 100</p>
+          </div>
+          <div class="result verbal">
+            <div class="summary-box verbal-box">
+              <img src="./assets/images/icon-verbal.svg" alt="icon-verbal" />
+              <p>Verbal</p>
+            </div>
+            <p><b>61</b> / 100</p>
+          </div>
+          <div class="result visual">
+            <div class="summary-box visual-box">
+              <img src="./assets/images/icon-visual.svg" alt="icon-visual" />
+              <p>Visual</p>
+            </div>
+            <p><b>73</b> / 100</p>
+          </div>
+        </div>
+        <button id="btn-cont">Continue</button>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ma Comfort</a>.
+    </div>
+
+    <script>
+      const btnContinue = document.getElementById("btn-cont");
+      btnContinue.addEventListener("click", () => {
+        btnContinue.style.backgroundImage =
+          "linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%))";
+      });
+    </script>
+  </body>
+</html>
